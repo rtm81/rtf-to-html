@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     23.01.2012 21:55:33                                                        
+
+     rtf-to-html    
+     description
+                   
+     christopher.roscoe                                                                
+     ====================================================================== -->
+<project name="rtf-to-html" default="default">
+    <description>
+            description
+    </description>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" depends="clean" description="description">
+        <java classpath="out/antlr-3.1.1-runtime.jar" classname="org.antlr.Tool" args="Rtf.g"></java>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="clean">
+    </target>
+
+</project>
